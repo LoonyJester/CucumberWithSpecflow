@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/CucumberWithSpecflow/v14
+/packages
+/Tests/bin/Debug
+/Tests/obj/Debug
