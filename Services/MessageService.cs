@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Definitions;
 using Definitions.Entities.Messaging;
 using Definitions.Interfaces.Repositories;
@@ -22,7 +23,11 @@ namespace Services
 
         public MessageDTO CheckFirstReference(ReceivedMessage receivedMessage)
         {
-            throw new NotImplementedException();
+            if (receivedMessage.References != null && receivedMessage.References.Any())
+            {
+               _repo.CheckByFirstReference(receivedMessage.References.First());
+            }
+            return null;
         }
     }
 }

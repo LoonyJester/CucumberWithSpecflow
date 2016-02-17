@@ -83,6 +83,28 @@ this.ScenarioSetup(scenarioInfo);
             this.ScenarioCleanup();
         }
         
+        [TechTalk.SpecRun.ScenarioAttribute("The  first reference exists", new string[] {
+                "MessageScenarios",
+                "CheckFirstReference"}, SourceLine=10)]
+        public virtual void TheFirstReferenceExists()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("The  first reference exists", new string[] {
+                        "MessageScenarios",
+                        "CheckFirstReference"});
+#line 11
+this.ScenarioSetup(scenarioInfo);
+#line 12
+ testRunner.Given("We have a received email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 13
+ testRunner.And("The first reference is exist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 14
+ testRunner.Then("We start to found a message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 15
+ testRunner.When("It should check by the first reference", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
         [TechTalk.SpecRun.TestRunCleanup()]
         public virtual void TestRunCleanup()
         {
