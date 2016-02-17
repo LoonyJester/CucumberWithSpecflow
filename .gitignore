@@ -6,3 +6,10 @@
 /packages
 /Tests/bin/Debug
 /Tests/obj/Debug
+/Definitions/bin/Debug
+/Definitions/obj/Debug
+/Definitions/Definitions.csproj.user
+/Services/bin/Debug
+/Services/obj/Debug
+/TestResults
+*.DotSettings
