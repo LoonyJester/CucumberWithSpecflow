@@ -16,17 +16,30 @@ namespace Services
             _repo = repo;
         }
 
-//        public MessageDTO SaveNewEmail(ReceivedMessage receivedMessage)
-//        {
-//            throw new NotImplementedException();
-//        }
+        public MessageDTO SaveNewEmail(ReceivedMessage receivedMessage)
+        {
+            if (receivedMessage == null) throw new ArgumentNullException(nameof(receivedMessage));
+
+            var message = _repo.Get(receivedMessage.MessageId) ?? new MessageDTO();
+            message.Id = receivedMessage.MessageId;
+            message.PrimaryId = receivedMessage.References != null ? receivedMessage.References.FirstOrDefault() ?? receivedMessage.MessageId : receivedMessage.MessageId;
+            message.Content = receivedMessage.Content;
+            message.Timestamp = receivedMessage.Timestamp;
+            return _repo.Save(message);
+        }
 
         public MessageDTO CheckFirstReference(ReceivedMessage receivedMessage)
         {
+            MessageDTO message;
             if (receivedMessage.References != null && receivedMessage.References.Any())
             {
-               _repo.CheckByFirstReference(receivedMessage.References.First());
+                message = _repo.CheckByFirstReference(receivedMessage.References.First());
+                if (message != null && message.CWTiketId > 0)
+                    return message;
             }
+            message = _repo.CheckByMessageId(receivedMessage.MessageId);
+            if (message != null && message.CWTiketId > 0)
+                return message;
             return null;
         }
     }

@@ -105,6 +105,303 @@ this.ScenarioSetup(scenarioInfo);
             this.ScenarioCleanup();
         }
         
+        [TechTalk.SpecRun.ScenarioAttribute("The first reference exists and a message has been found in db by the first refere" +
+            "nce and the ticket Id is greater that zero", new string[] {
+                "MessageScenarios",
+                "CheckFirstReference"}, SourceLine=17)]
+        public virtual void TheFirstReferenceExistsAndAMessageHasBeenFoundInDbByTheFirstReferenceAndTheTicketIdIsGreaterThatZero()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("The first reference exists and a message has been found in db by the first refere" +
+                    "nce and the ticket Id is greater that zero", new string[] {
+                        "MessageScenarios",
+                        "CheckFirstReference"});
+#line 18
+this.ScenarioSetup(scenarioInfo);
+#line 19
+ testRunner.Given("We have a received email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 20
+ testRunner.And("The first reference is exist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 21
+ testRunner.Then("A message has been found by the first the first reference and the ticket Id is gr" +
+                    "eater that zero", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 22
+ testRunner.And("We start to found a message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 23
+ testRunner.When("It should return a message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("A message hasn\'t been found by the first reference and it should check by the mes" +
+            "sage Id", new string[] {
+                "MessageScenarios",
+                "CheckFirstReference"}, SourceLine=25)]
+        public virtual void AMessageHasnTBeenFoundByTheFirstReferenceAndItShouldCheckByTheMessageId()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A message hasn\'t been found by the first reference and it should check by the mes" +
+                    "sage Id", new string[] {
+                        "MessageScenarios",
+                        "CheckFirstReference"});
+#line 26
+this.ScenarioSetup(scenarioInfo);
+#line 27
+ testRunner.Given("We have a received email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 28
+ testRunner.And("The first reference is exist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 29
+ testRunner.Then("A message hasn\'t been found by the first reference", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 30
+ testRunner.And("We start to found a message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 31
+ testRunner.When("It should check by the message Id", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("A message has been found by the first reference but ticket Id is equal zero and i" +
+            "t should check by the message Id", new string[] {
+                "MessageScenarios",
+                "CheckFirstReference"}, SourceLine=33)]
+        public virtual void AMessageHasBeenFoundByTheFirstReferenceButTicketIdIsEqualZeroAndItShouldCheckByTheMessageId()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A message has been found by the first reference but ticket Id is equal zero and i" +
+                    "t should check by the message Id", new string[] {
+                        "MessageScenarios",
+                        "CheckFirstReference"});
+#line 34
+this.ScenarioSetup(scenarioInfo);
+#line 35
+ testRunner.Given("We have a received email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 36
+ testRunner.And("The first reference is exist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 37
+ testRunner.Then("A message has been found by the first reference and the ticket Id is equal zero", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 38
+ testRunner.And("We start to found a message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 39
+ testRunner.When("It should check by the message Id", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("A message hasn\'t been found by the first reference but has been found by the mess" +
+            "age Id and ticket id greater zero", new string[] {
+                "MessageScenarios",
+                "CheckFirstReference"}, SourceLine=41)]
+        public virtual void AMessageHasnTBeenFoundByTheFirstReferenceButHasBeenFoundByTheMessageIdAndTicketIdGreaterZero()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A message hasn\'t been found by the first reference but has been found by the mess" +
+                    "age Id and ticket id greater zero", new string[] {
+                        "MessageScenarios",
+                        "CheckFirstReference"});
+#line 42
+this.ScenarioSetup(scenarioInfo);
+#line 43
+ testRunner.Given("We have a received email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 44
+ testRunner.And("The first reference is exist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 45
+ testRunner.Then("A message hasn\'t been found by the first reference", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 46
+ testRunner.And("A message has been found by the message Id and the ticket id greater zero", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 47
+ testRunner.And("We start to found a message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 48
+ testRunner.When("It should return a message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("A message hasn\'t been found by the first reference but has been found by the mess" +
+            "age Id and ticket Id is equal zero", new string[] {
+                "MessageScenarios",
+                "CheckFirstReference"}, SourceLine=50)]
+        public virtual void AMessageHasnTBeenFoundByTheFirstReferenceButHasBeenFoundByTheMessageIdAndTicketIdIsEqualZero()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A message hasn\'t been found by the first reference but has been found by the mess" +
+                    "age Id and ticket Id is equal zero", new string[] {
+                        "MessageScenarios",
+                        "CheckFirstReference"});
+#line 51
+this.ScenarioSetup(scenarioInfo);
+#line 52
+ testRunner.Given("We have a received email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 53
+ testRunner.And("The first reference is exist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 54
+ testRunner.Then("A message hasn\'t been found by the first reference", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 55
+ testRunner.And("A message has been found by the message Id and the ticket Id is equal zero", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 56
+ testRunner.And("We start to found a message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 57
+ testRunner.When("It should return null", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("A message has been found neither by the first reference nor by a message Id", new string[] {
+                "MessageScenarios",
+                "CheckFirstReference"}, SourceLine=59)]
+        public virtual void AMessageHasBeenFoundNeitherByTheFirstReferenceNorByAMessageId()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A message has been found neither by the first reference nor by a message Id", new string[] {
+                        "MessageScenarios",
+                        "CheckFirstReference"});
+#line 60
+this.ScenarioSetup(scenarioInfo);
+#line 61
+ testRunner.Given("We have a received email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 62
+ testRunner.And("The first reference is exist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 63
+ testRunner.Then("A message hasn\'t been found by the first reference", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 64
+ testRunner.And("A message hasn\'t been found by the message Id", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 65
+ testRunner.And("We start to found a message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 66
+ testRunner.When("It should return null", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Message exists, received email has references and we return it", new string[] {
+                "MessageScenarios",
+                "SaveReceivedEmail"}, SourceLine=68)]
+        public virtual void MessageExistsReceivedEmailHasReferencesAndWeReturnIt()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Message exists, received email has references and we return it", new string[] {
+                        "MessageScenarios",
+                        "SaveReceivedEmail"});
+#line 69
+this.ScenarioSetup(scenarioInfo);
+#line 70
+ testRunner.Given("We have a received email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 71
+ testRunner.And("The first reference is exist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 72
+ testRunner.Then("A message with the specific message Id exists", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 73
+ testRunner.And("We start to save a message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 74
+ testRunner.When("It should set Primary-ID (message-id) as a unique message identifier from Email H" +
+                    "eader(The first reference)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 75
+ testRunner.And("It should set Message-ID as a unique message identifier from Email Header", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 76
+ testRunner.And("It should set Email message content from the reseived message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 77
+ testRunner.And("It should set timestamp from the reseived message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 78
+ testRunner.And("It should update the message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 79
+ testRunner.And("It should return the massage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Message don\'t exist, received email has references  and we return it", new string[] {
+                "MessageScenarios",
+                "SaveReceivedEmail"}, SourceLine=82)]
+        public virtual void MessageDonTExistReceivedEmailHasReferencesAndWeReturnIt()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Message don\'t exist, received email has references  and we return it", new string[] {
+                        "MessageScenarios",
+                        "SaveReceivedEmail"});
+#line 83
+this.ScenarioSetup(scenarioInfo);
+#line 84
+ testRunner.Given("We have a received email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 85
+ testRunner.And("The first reference is exist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 86
+ testRunner.Then("A message with the specific message Id doesn\'t exist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 87
+ testRunner.And("We start to save a message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 88
+ testRunner.When("It should set Primary-ID (message-id) as a unique message identifier from Email H" +
+                    "eader(The first reference)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 89
+ testRunner.And("It should set Message-ID as a unique message identifier from Email Header", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 90
+ testRunner.And("It should set Email message content from the reseived message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 91
+ testRunner.And("It should set timestamp from the reseived message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 92
+ testRunner.And("It should save the message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 93
+ testRunner.And("It should return the massage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Message exists, received email hasn\'t references and we return it", new string[] {
+                "MessageScenarios",
+                "SaveReceivedEmail"}, SourceLine=95)]
+        public virtual void MessageExistsReceivedEmailHasnTReferencesAndWeReturnIt()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Message exists, received email hasn\'t references and we return it", new string[] {
+                        "MessageScenarios",
+                        "SaveReceivedEmail"});
+#line 96
+this.ScenarioSetup(scenarioInfo);
+#line 97
+ testRunner.Given("We have a received email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 98
+ testRunner.Then("A message with the specific message Id exists", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 99
+ testRunner.And("We start to save a message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 100
+ testRunner.When("It should set Primary-ID (message-id) as a unique message identifier from Email H" +
+                    "eader(Message-ID)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 101
+ testRunner.And("It should set Message-ID as a unique message identifier from Email Header", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 102
+ testRunner.And("It should set Email message content from the reseived message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 103
+ testRunner.And("It should set timestamp from the reseived message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 104
+ testRunner.And("It should update the message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 105
+ testRunner.And("It should return the massage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Message don\'t exist, received email hasn\'t references and we return it", new string[] {
+                "MessageScenarios",
+                "SaveReceivedEmail"}, SourceLine=108)]
+        public virtual void MessageDonTExistReceivedEmailHasnTReferencesAndWeReturnIt()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Message don\'t exist, received email hasn\'t references and we return it", new string[] {
+                        "MessageScenarios",
+                        "SaveReceivedEmail"});
+#line 109
+this.ScenarioSetup(scenarioInfo);
+#line 110
+ testRunner.Given("We have a received email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 111
+ testRunner.Then("A message with the specific message Id doesn\'t exist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 112
+ testRunner.And("We start to save a message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 113
+ testRunner.When("It should set Primary-ID (message-id) as a unique message identifier from Email H" +
+                    "eader(Message-ID)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 114
+ testRunner.And("It should set Message-ID as a unique message identifier from Email Header", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 115
+ testRunner.And("It should set Email message content from the reseived message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 116
+ testRunner.And("It should set timestamp from the reseived message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 117
+ testRunner.And("It should save the message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 118
+ testRunner.And("It should return the massage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
         [TechTalk.SpecRun.TestRunCleanup()]
         public virtual void TestRunCleanup()
         {
